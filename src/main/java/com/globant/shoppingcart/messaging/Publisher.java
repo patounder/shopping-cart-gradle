@@ -11,7 +11,7 @@ public class Publisher {
     @Autowired
     private AmqpTemplate amqpTemplate;
 
-    @Value("${queue.name}")
+    @Value("${publish.queue.name}")
     private String queueName;
 
     public boolean postMessage(String msg){
